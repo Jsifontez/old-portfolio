@@ -1,0 +1,48 @@
+<template>
+  <b-container id="app" class="bv-example-row">
+    <header id="header" class="">
+      <b-row align-h="between">
+
+        <b-col sm="12" md="6" lg="6">
+          <b-nav tabs>
+            <b-nav-item active id="name">Juan Sifontez</b-nav-item>
+            <b-nav-item >About me</b-nav-item>
+            <b-nav-item >Projects</b-nav-item>
+            <b-nav-item >Articles</b-nav-item>
+          </b-nav>
+        </b-col>
+
+        <b-col sm="12" md="6" lg="4">
+          <span>🆓</span>
+          <span>🆓</span>
+          <span>🆓</span>
+        </b-col>
+
+      </b-row>
+    </header>
+  </b-container>
+</template>
+
+<script>
+  export default {
+    name: 'app',
+    data () {
+      return {
+        msg: 'Welcome to Your Vue.js App'
+      }
+    }
+  }
+</script>
+
+<style lang="scss">
+  .nav-tabs{
+    border: 0;
+  }
+  #header{
+    padding: 40px 0
+  }
+  #name {
+    font-size: 30px;
+    line-height: .5
+  }
+</style>
