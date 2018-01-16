@@ -1,14 +1,18 @@
 <template>
-  <b-container id="app">
+  <div id="app">
+
     <pf-header></pf-header>
 
-    <pf-about></pf-about>
+    <b-container>
 
-      <pf-projects :projects='projects' id="projects">
-      </pf-projects>
+      <pf-about></pf-about>
 
-    <pf-footer></pf-footer>
-  </b-container>
+        <pf-projects :projects='projects' id="projects">
+        </pf-projects>
+
+      <pf-footer></pf-footer>
+    </b-container>
+  </div>
 </template>
 
 <script>
@@ -52,7 +56,7 @@
     border: 0;
   }
   #header{
-    padding: 40px 0
+    padding: 40px 32px
   }
   #name {
     font-size: 30px;
