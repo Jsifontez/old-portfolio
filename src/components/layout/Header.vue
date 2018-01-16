@@ -8,7 +8,9 @@
           <b-nav-item >
             <a href="#about">About</a>
           </b-nav-item>
-          <b-nav-item >Projects</b-nav-item>
+          <b-nav-item >
+            <a href="#projects">Projects</a>
+          </b-nav-item>
           <b-nav-item >Articles</b-nav-item>
         </b-nav>
       </b-col>

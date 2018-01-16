@@ -4,6 +4,9 @@
 
     <pf-about></pf-about>
 
+      <pf-projects :projects='projects' id="projects">
+      </pf-projects>
+
     <pf-footer></pf-footer>
   </b-container>
 </template>
@@ -12,15 +15,33 @@
   import PfHeader from '@/components/layout/Header'
   import PfFooter from '@/components/layout/Footer'
   import PfAbout from '@/components/About'
+  import PfProjects from '@/components/Projects'
 
   export default {
     name: 'app',
 
-    components: { PfHeader, PfFooter, PfAbout },
+    components: { PfHeader, PfFooter, PfAbout, PfProjects },
 
     data () {
       return {
-        msg: 'Welcome to Your Vue.js App'
+        projects: [
+          {
+            title: 'Platzigram',
+            description: 'Este es un proyecto de platzi'
+          },
+          {
+            title: 'Platzimusic',
+            description: 'Este es un proyecto de platzi'
+          },
+          {
+            title: 'Platzivideo',
+            description: 'Este es un proyecto de platzi'
+          },
+          {
+            title: 'Task Board',
+            description: 'Este es un proyecto personal'
+          }
+        ]
       }
     }
   }
