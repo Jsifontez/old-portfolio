@@ -1,31 +1,22 @@
 <template>
-  <b-container id="app" class="bv-example-row">
-    <header id="header" class="">
-      <b-row align-h="between">
+  <b-container id="app" class="bv-example-row bv-example-row-flex-cols">
+    <pf-header>
+    </pf-header>
 
-        <b-col sm="12" md="6" lg="6">
-          <b-nav tabs>
-            <b-nav-item active id="name">Juan Sifontez</b-nav-item>
-            <b-nav-item >About me</b-nav-item>
-            <b-nav-item >Projects</b-nav-item>
-            <b-nav-item >Articles</b-nav-item>
-          </b-nav>
-        </b-col>
-
-        <b-col sm="12" md="6" lg="4">
-          <span>🆓</span>
-          <span>🆓</span>
-          <span>🆓</span>
-        </b-col>
-
-      </b-row>
-    </header>
+    <pf-footer>
+    </pf-footer>
   </b-container>
 </template>
 
 <script>
+  import PfHeader from '@/components/layout/Header'
+  import PfFooter from '@/components/layout/Footer'
+
   export default {
     name: 'app',
+
+    components: { PfHeader, PfFooter },
+
     data () {
       return {
         msg: 'Welcome to Your Vue.js App'
