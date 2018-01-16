@@ -5,7 +5,9 @@
       <b-col sm="12" md="6" lg="6">
         <b-nav tabs>
           <b-nav-item active id="name">Juan Sifontez</b-nav-item>
-          <b-nav-item >About me</b-nav-item>
+          <b-nav-item >
+            <a href="#about">About</a>
+          </b-nav-item>
           <b-nav-item >Projects</b-nav-item>
           <b-nav-item >Articles</b-nav-item>
         </b-nav>

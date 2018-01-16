@@ -1,21 +1,22 @@
 <template>
-  <b-container id="app" class="bv-example-row bv-example-row-flex-cols">
-    <pf-header>
-    </pf-header>
+  <b-container id="app">
+    <pf-header></pf-header>
 
-    <pf-footer>
-    </pf-footer>
+    <pf-about></pf-about>
+
+    <pf-footer></pf-footer>
   </b-container>
 </template>
 
 <script>
   import PfHeader from '@/components/layout/Header'
   import PfFooter from '@/components/layout/Footer'
+  import PfAbout from '@/components/About'
 
   export default {
     name: 'app',
 
-    components: { PfHeader, PfFooter },
+    components: { PfHeader, PfFooter, PfAbout },
 
     data () {
       return {
