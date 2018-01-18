@@ -9,14 +9,29 @@
 
         <b-navbar-nav>
           <b-nav-item href="#skills">Habilidades</b-nav-item>
-          <b-nav-item href="#projects">Projects</b-nav-item>
+          <b-nav-item href="#projects">Proyectos</b-nav-item>
           <b-nav-item href="#blog">Blog</b-nav-item>
         </b-navbar-nav>
 
         <b-navbar-nav class="ml-auto">
-          <b-nav-item href="https://twitter.com/Jsifontz_?lang=es">🆓</b-nav-item>
-          <b-nav-item href="https://twitter.com/Jsifontz_?lang=es">🆓</b-nav-item>
-          <b-nav-item href="https://twitter.com/Jsifontz_?lang=es">🆓</b-nav-item>
+          <b-nav-item href="https://www.linkedin.com/in/juan-sifontez-924761133/" target="_blank">
+            <i class="fab fa-linkedin-in"></i>
+          </b-nav-item>
+          <b-nav-item href="https://github.com/JSifontz" target="_blank">
+            <i class="fab fa-github"></i>
+          </b-nav-item>
+          <b-nav-item href="https://twitter.com/Jsifontz_?lang=es" target="_blank">
+            <i class="fab fa-twitter"></i>
+          </b-nav-item>
+          <b-nav-item href="mailto:juansfontz@gmail.com" target="_blank">
+            <i class="far fa-envelope"></i>
+          </b-nav-item>
+          <b-nav-item href="https://medium.com/@Jsifontez" target="_blank">
+            <i class="fab fa-medium-m"></i>
+          </b-nav-item>
+          <b-nav-item href="https://www.facebook.com/juansifontez/" target="_blank">
+            <i class="fab fa-facebook-square"></i>
+          </b-nav-item>
         </b-navbar-nav>
 
       </b-collapse>
