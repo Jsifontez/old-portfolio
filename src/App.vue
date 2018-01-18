@@ -1,30 +1,30 @@
 <template>
   <div id="app">
-
-    <pf-header></pf-header>
+    <mp-header></mp-header>
 
     <b-container>
 
-      <pf-about></pf-about>
+      <mp-about></mp-about>
 
-        <pf-projects :projects='projects' id="projects">
-        </pf-projects>
+      <mp-skills></mp-skills>
 
-      <pf-footer></pf-footer>
+      <mp-projects :projects='projects' id="projects"></mp-projects>
     </b-container>
+    <mp-footer></mp-footer>
   </div>
 </template>
 
 <script>
-  import PfHeader from '@/components/layout/Header'
-  import PfFooter from '@/components/layout/Footer'
-  import PfAbout from '@/components/About'
-  import PfProjects from '@/components/Projects'
+  import MpHeader from '@/components/layout/Header'
+  import MpFooter from '@/components/layout/Footer'
+  import MpAbout from '@/components/About'
+  import MpProjects from '@/components/Projects'
+  import MpSkills from '@/components/Skills'
 
   export default {
     name: 'app',
 
-    components: { PfHeader, PfFooter, PfAbout, PfProjects },
+    components: { MpHeader, MpFooter, MpAbout, MpProjects, MpSkills },
 
     data () {
       return {
@@ -61,5 +61,8 @@
   #name {
     font-size: 30px;
     line-height: .5
+  }
+  .text{
+    margin-bottom: 35px;
   }
 </style>
