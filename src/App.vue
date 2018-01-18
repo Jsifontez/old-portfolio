@@ -9,7 +9,10 @@
       <mp-skills></mp-skills>
 
       <mp-projects :projects='projects' id="projects"></mp-projects>
+
+      <mp-blog></mp-blog>
     </b-container>
+
     <mp-footer></mp-footer>
   </div>
 </template>
@@ -20,11 +23,12 @@
   import MpAbout from '@/components/About'
   import MpProjects from '@/components/Projects'
   import MpSkills from '@/components/Skills'
+  import MpBlog from '@/components/Blog'
 
   export default {
     name: 'app',
 
-    components: { MpHeader, MpFooter, MpAbout, MpProjects, MpSkills },
+    components: { MpHeader, MpFooter, MpAbout, MpProjects, MpSkills, MpBlog },
 
     data () {
       return {

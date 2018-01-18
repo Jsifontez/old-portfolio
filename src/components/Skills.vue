@@ -1,16 +1,20 @@
 <template lang="html">
   <b-row id="skills">
+    
     <b-col sm="12" class="text-center text">
       <h3>Habilidades</h3>
     </b-col>
+
     <b-col cols="3"
       v-for="l in logos"
       :key="l.id"
       class="skills-images"
     >
+
       <b-img-lazy
         :src='l.src'
-        fluid :alt="l.id"
+        fluid
+        :alt="l.id"
         height="100"
         width="100"
         blank-color="#bbb"
