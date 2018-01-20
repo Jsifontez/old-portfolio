@@ -11,9 +11,9 @@
       <mp-projects :projects='projects' id="projects"></mp-projects>
 
       <mp-blog></mp-blog>
-    </b-container>
 
-    <mp-footer></mp-footer>
+      <mp-footer></mp-footer>
+    </b-container>
   </div>
 </template>
 
