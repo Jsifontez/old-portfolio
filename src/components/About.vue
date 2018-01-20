@@ -1,7 +1,7 @@
 <template lang="html">
   <b-row id="about">
     <b-col md="12" class="text-center text">
-      <h3>Acerca de mi</h3>
+      <h2>Acerca de mi</h2>
     </b-col>
     <b-col md="6" offset-md="3">
       <p>

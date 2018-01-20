@@ -1,8 +1,8 @@
 <template lang="html">
   <b-row id="skills">
-    
+
     <b-col sm="12" class="text-center text">
-      <h3>Habilidades</h3>
+      <h2>Habilidades</h2>
     </b-col>
 
     <b-col cols="3"

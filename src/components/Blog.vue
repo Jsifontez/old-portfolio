@@ -1,7 +1,7 @@
 <template lang="html">
   <b-row class="blog">
     <b-col class="text-center text" sm="12">
-      <h3>Artículos</h3>
+      <h2>Artículos</h2>
     </b-col>
 
     <b-col sm="12" md="4" lg="3"
