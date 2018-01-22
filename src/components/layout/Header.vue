@@ -1,5 +1,5 @@
 <template lang="html">
-  <header id="header" class="jumbotron">
+  <header id="header" class="subtitle">
     <b-navbar toggleable="md">
       <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
 
@@ -7,7 +7,7 @@
 
       <b-collapse is-nav id="nav_collapse">
 
-        <b-navbar-nav>
+        <b-navbar-nav class="sections">
           <b-nav-item href="#projects">Proyectos</b-nav-item>
           <b-nav-item href="#blog">Blog</b-nav-item>
           <b-nav-item href="#contact">Contacto</b-nav-item>
@@ -39,3 +39,21 @@
     </b-navbar>
   </header>
 </template>
+
+<style lang="scss" scoped>
+  $primary: #9fcc4e;
+  // $primary: #9FCC4E;
+  $secondary-l: #ffffb0;
+
+  header{
+    background-color: $primary;
+    font-weight: bold;
+    padding: 40px 32px;
+
+    #nav_collapse a:hover{
+      color: $secondary-l;
+    }
+
+
+  }
+</style>

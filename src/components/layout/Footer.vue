@@ -1,7 +1,7 @@
 <template lang="html">
-  <footer id="contact">
+  <footer id="contact" class="container-fluid">
     <b-row align-v="center">
-      <b-col cols="12 text-center">
+      <b-col cols="12 text-center" class="subtitle">
         <p>
           Juan Sifontez © 2018
           <a href="mailto:juansfontz@gmail.com">
@@ -24,7 +24,22 @@
 </template>
 
 <style lang="scss" scoped>
-  p{
-    margin-top: 20px;
+  footer{
+    background-color: #9fcc4e;
+    min-height: 20vh;
+
+    p{
+      margin-top: 20px;
+      color: black;
+    }
+
+    .subtitle a{
+      color: black;
+    }
+
+    .subtitle a:hover{
+      color: #ffffb0;
+    }
+
   }
 </style>

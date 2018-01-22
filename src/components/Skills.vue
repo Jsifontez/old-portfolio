@@ -1,7 +1,7 @@
 <template lang="html">
   <b-row id="skills">
 
-    <b-col sm="12" class="text-center text">
+    <b-col sm="12" class="text-center subtitle">
       <h2>Habilidades</h2>
     </b-col>
 
@@ -11,13 +11,12 @@
       class="skills-images"
     >
 
-      <b-img-lazy
+      <b-img
         :src='l.src'
         fluid
         :alt="l.id"
         height="100"
         width="100"
-        blank-color="#bbb"
         center
       />
     </b-col>

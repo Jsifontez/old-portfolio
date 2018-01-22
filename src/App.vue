@@ -12,8 +12,8 @@
 
       <mp-blog></mp-blog>
 
-      <mp-footer></mp-footer>
     </b-container>
+    <mp-footer></mp-footer>
   </div>
 </template>
 
@@ -56,17 +56,20 @@
 </script>
 
 <style lang="scss">
-  .nav-tabs{
-    border: 0;
+  #app{
+    // background-color: #D2FF7E;
+    background-color: #fffff2;
   }
-  #header{
-    padding: 40px 32px
-  }
-  #name {
-    font-size: 30px;
-    line-height: .5
-  }
-  .text{
+
+  .subtitle{
+    font-weight: bold;
     margin-bottom: 35px;
+    font-family: 'Varela Round', sans-serif;
+    color: #9fcc4e;
+  }
+
+  .description{
+    font-family: 'Montserrat', sans-serif;
+    color: darkgreen;
   }
 </style>

@@ -1,6 +1,6 @@
 <template lang="html">
   <b-row >
-    <b-col class="text-center text" sm="12">
+    <b-col class="text-center subtitle" sm="12">
       <h2>Proyectos</h2>
     </b-col>
 
@@ -8,8 +8,8 @@
       v-for="(p,i) in projects"
       :key="p.i"
     >
-      <h4> {{ p.title }}</h4>
-      <p>{{ p.description }}</p>
+      <h4 class="subtitle"> {{ p.title }}</h4>
+      <p class="description">{{ p.description }}</p>
     </b-col>
   </b-row>
 </template>
@@ -21,3 +21,9 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+  .subtitle{
+    margin-bottom: 0 !important
+  }
+</style>

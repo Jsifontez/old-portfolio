@@ -1,6 +1,6 @@
 <template lang="html">
   <b-row class="blog">
-    <b-col class="text-center text" sm="12">
+    <b-col class="text-center subtitle" sm="12">
       <h2>Artículos</h2>
     </b-col>
 
@@ -12,7 +12,7 @@
         <div class="img-container">
           <b-img :src="a.img" fluid-grow center height="305" width="205"/>
         </div>
-        <p class="title"> {{ a.title }}</p>
+        <p class="description"> {{ a.title }}</p>
       </a>
     </b-col>
   </b-row>
