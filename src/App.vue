@@ -1,18 +1,19 @@
 <template>
   <div id="app">
-    <mp-header v-on:changeActive="toogleActive"></mp-header>
+    <mp-header
+      @changeToAbout="about"
+      @changeToProjects="projectsComp"
+      @changeToBlog="blog"
+    ></mp-header>
 
     <b-container>
 
-      <mp-about :active="active"></mp-about>
-
-      <mp-skills></mp-skills>
-
-      <mp-projects :projects='projects' id="projects"></mp-projects>
-
-      <mp-blog></mp-blog>
+      <transition name="fade" mode="out-in">
+        <component :is="view"></component>
+      </transition>
 
     </b-container>
+
     <mp-footer></mp-footer>
   </div>
 </template>
@@ -25,14 +26,6 @@
   import MpSkills from '@/components/Skills'
   import MpBlog from '@/components/Blog'
 
-  window.addEventListener('scroll', function (e) {
-    // console.log(window.scrollY)
-
-    if (window.scrollY >= 240 && window.scrollY <= 279) {
-      console.log('YA ESTAMOS AQUI')
-    }
-  })
-
   export default {
     name: 'app',
 
@@ -40,36 +33,18 @@
 
     data () {
       return {
-        active: {
-          about: false,
-          projects: false,
-          blog: false
-        },
-        projects: [
-          {
-            title: 'Platzigram',
-            description: 'Este es un proyecto de platzi'
-          },
-          {
-            title: 'Platzimusic',
-            description: 'Este es un proyecto de platzi'
-          },
-          {
-            title: 'Platzivideo',
-            description: 'Este es un proyecto de platzi'
-          },
-          {
-            title: 'Task Board',
-            description: 'Este es un proyecto personal'
-          }
-        ]
+        view: 'MpBlog'
       }
     },
     methods: {
-      toogleActive () {
-        this.active.about = true
-        this.active.project = false
-        this.active.blog = false
+      about () {
+        this.view = 'MpAbout'
+      },
+      projectsComp () {
+        this.view = 'MpProjects'
+      },
+      blog () {
+        this.view = 'MpBlog'
       }
     }
   }
@@ -92,12 +67,10 @@
     color: darkgreen;
   }
 
-  .move-enter-active, .move-leave-active {
-    transform: translateX(0);
-    transition: all .3s linear;
-    }
-
-  .move-enter, .move-leave-to {
-    transform: translateX(100%);
+  .fade-enter-active, .fade-leave-active {
+    transition: opacity .3s ease;
+  }
+  .fade-enter, .fade-leave-to {
+    opacity: 0;
   }
 </style>

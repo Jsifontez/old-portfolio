@@ -3,13 +3,13 @@
     <b-navbar toggleable="md">
       <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
 
-      <b-navbar-brand href="#about" @click="changeActive">Juan Sifontez</b-navbar-brand>
+      <b-navbar-brand href="#about" @click="changeToAbout">Juan Sifontez</b-navbar-brand>
 
       <b-collapse is-nav id="nav_collapse">
 
         <b-navbar-nav class="sections">
-          <b-nav-item href="#projects">Proyectos</b-nav-item>
-          <b-nav-item href="#blog">Blog</b-nav-item>
+          <b-nav-item href="#projects" @click="changeToProjects">Proyectos</b-nav-item>
+          <b-nav-item href="#blog" @click="changeToBlog">Blog</b-nav-item>
           <b-nav-item href="#contact">Contacto</b-nav-item>
         </b-navbar-nav>
 
@@ -43,8 +43,14 @@
 <script>
   export default {
     methods: {
-      changeActive () {
-        this.$emit('changeActive')
+      changeToAbout () {
+        this.$emit('changeToAbout')
+      },
+      changeToProjects () {
+        this.$emit('changeToProjects')
+      },
+      changeToBlog () {
+        this.$emit('changeToBlog')
       }
     }
   }

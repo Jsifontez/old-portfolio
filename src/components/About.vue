@@ -1,6 +1,6 @@
 <template lang="html">
   <transition name="move">
-    <b-row id="about" v-show="active.about">
+    <b-row id="about">
       <b-col md="12" class="text-center subtitle">
         <h2>Acerca de mi</h2>
       </b-col>
@@ -12,14 +12,6 @@
     </b-row>
   </transition>
 </template>
-
-<script>
-export default {
-  props: {
-    active: Object
-  }
-}
-</script>
 
 <style lang="scss" scoped>
   #about{

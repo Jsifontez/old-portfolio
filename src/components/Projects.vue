@@ -16,8 +16,27 @@
 
 <script>
 export default {
-  props: {
-    projects: Array
+  data () {
+    return {
+      projects: [
+        {
+          title: 'Platzigram',
+          description: 'Este es un proyecto de platzi'
+        },
+        {
+          title: 'Platzimusic',
+          description: 'Este es un proyecto de platzi'
+        },
+        {
+          title: 'Platzivideo',
+          description: 'Este es un proyecto de platzi'
+        },
+        {
+          title: 'Task Board',
+          description: 'Este es un proyecto personal'
+        }
+      ]
+    }
   }
 }
 </script>
