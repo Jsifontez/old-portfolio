@@ -1,5 +1,5 @@
 <template lang="html">
-  <b-row >
+  <b-row id="projects">
     <b-col class="text-center subtitle" sm="12">
       <h2>Proyectos</h2>
     </b-col>
@@ -43,6 +43,9 @@ export default {
 
 <style lang="scss" scoped>
   .subtitle{
-    margin-bottom: 0 !important
+    margin-bottom: 0 !important;
+  },
+  #projects{
+    min-height: 53vh;
   }
 </style>

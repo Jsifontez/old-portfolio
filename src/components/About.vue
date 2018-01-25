@@ -15,6 +15,6 @@
 
 <style lang="scss" scoped>
   #about{
-    min-height: 50vh;
+    min-height: 53vh;
   }
 </style>
