@@ -3,7 +3,7 @@
     <b-navbar toggleable="md">
       <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
 
-      <b-navbar-brand href="#about">Juan Sifontez</b-navbar-brand>
+      <b-navbar-brand href="#about" @click="changeActive">Juan Sifontez</b-navbar-brand>
 
       <b-collapse is-nav id="nav_collapse">
 
@@ -40,9 +40,18 @@
   </header>
 </template>
 
+<script>
+  export default {
+    methods: {
+      changeActive () {
+        this.$emit('changeActive')
+      }
+    }
+  }
+</script>
+
 <style lang="scss" scoped>
   $primary: #9fcc4e;
-  // $primary: #9FCC4E;
   $secondary-l: #ffffb0;
 
   header{

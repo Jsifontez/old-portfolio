@@ -1,10 +1,10 @@
 <template>
   <div id="app">
-    <mp-header></mp-header>
+    <mp-header v-on:changeActive="toogleActive"></mp-header>
 
     <b-container>
 
-      <mp-about></mp-about>
+      <mp-about :active="active"></mp-about>
 
       <mp-skills></mp-skills>
 
@@ -25,6 +25,14 @@
   import MpSkills from '@/components/Skills'
   import MpBlog from '@/components/Blog'
 
+  window.addEventListener('scroll', function (e) {
+    // console.log(window.scrollY)
+
+    if (window.scrollY >= 240 && window.scrollY <= 279) {
+      console.log('YA ESTAMOS AQUI')
+    }
+  })
+
   export default {
     name: 'app',
 
@@ -32,6 +40,11 @@
 
     data () {
       return {
+        active: {
+          about: false,
+          projects: false,
+          blog: false
+        },
         projects: [
           {
             title: 'Platzigram',
@@ -51,13 +64,19 @@
           }
         ]
       }
+    },
+    methods: {
+      toogleActive () {
+        this.active.about = true
+        this.active.project = false
+        this.active.blog = false
+      }
     }
   }
 </script>
 
 <style lang="scss">
   #app{
-    // background-color: #D2FF7E;
     background-color: #fffff2;
   }
 
@@ -71,5 +90,14 @@
   .description{
     font-family: 'Montserrat', sans-serif;
     color: darkgreen;
+  }
+
+  .move-enter-active, .move-leave-active {
+    transform: translateX(0);
+    transition: all .3s linear;
+    }
+
+  .move-enter, .move-leave-to {
+    transform: translateX(100%);
   }
 </style>
