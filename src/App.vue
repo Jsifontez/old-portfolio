@@ -33,7 +33,7 @@
 
     data () {
       return {
-        view: 'MpBlog'
+        view: 'MpAbout'
       }
     },
     methods: {
