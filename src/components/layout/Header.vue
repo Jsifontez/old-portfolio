@@ -8,9 +8,8 @@
       <b-collapse is-nav id="nav_collapse">
 
         <b-navbar-nav class="sections">
-          <b-nav-item href="#projects" @click="changeToProjects">Proyectos</b-nav-item>
+          <b-nav-item href="#projects" @click="changeToProjects">Projects</b-nav-item>
           <b-nav-item href="#blog" @click="changeToBlog">Blog</b-nav-item>
-          <b-nav-item href="#contact">Contacto</b-nav-item>
         </b-navbar-nav>
 
         <b-navbar-nav class="ml-auto">
