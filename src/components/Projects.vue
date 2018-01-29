@@ -36,7 +36,7 @@ export default {
         {
           title: 'Platzimusic',
           description: 'Este es un proyecto de platzi',
-          src: 'https://platzimusic-bnnfdkylxp.now.sh/'
+          src: 'https://platzimusic-eewwwzpzee.now.sh'
         },
         {
           title: 'Platzivideo',
