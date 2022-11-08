@@ -18,7 +18,7 @@
     "@yonyou-cloud/eslint-config": "0.0.1",
     "babel-core": "^6.26.3",
     "babel-eslint": "^7.2.3",
-    "babel-loader": "^6.0.0",
+    "babel-loader": "^9.1.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-stage-3": "^6.24.1",
     "cross-env": "^5.1.1",
